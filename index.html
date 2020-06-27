@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/fb4a08b549.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Monty's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="img/Logo.png" alt="logo" />
+          <div class="nav-menutoggle">
+            <i class="fas fa-bars" id="toggle"></i>
+            <i class="fas fa-times" id="close"></i>
+          </div>
+          <div class="nav-overlay" id="nav-overlay"></div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a href="/public/MontgomeryTanResume.pdf" target="_blank"
+                >Get my CV</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="hero" id="top">
+      <div class="container">
+        <h1 class="hero-name">
+          Monty Tan
+        </h1>
+        <h1 class="hero-typing">
+          I make
+          <span
+            class="txt-type"
+            data-wait="1500"
+            data-words='["pancakes", "bibimbap", "websites"]'
+          ></span>
+          <span class="cursor"></span>
+        </h1>
+        <p>I'm a self-taught web developer from Manila, Philippines</p>
+        <div class="btn-group">
+          <a href="#projects"><button>My Projects</button></a>
+          <a href="/public/MontgomeryTanResume.pdf" target="_blank"
+            ><button>My CV</button></a
+          >
+        </div>
+      </div>
+    </main>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content" data-aos="fade-up">
+          <i class="far fa-address-card"></i>
+          <h2>About me</h2>
+          <p>
+            I'm a graduate of UST with a Bachelor's degree in Fine Arts Major in
+            Advertising. I've been a Marketing Specialist for 6 years, and have
+            gained interest in web development. I love learning new things that
+            could help improve my craft, and I always strive to be better
+            everyday.
+          </p>
+        </div>
+      </div>
+      <div class="skills" id="skills">
+        <div class="skills-flex">
+          <div class="skills-webdev" data-aos="fade-right">
+            <i class="fas fa-laptop-code"></i>
+            <h4>Web Development</h4>
+            <ul class="skills-list">
+              <li class="skills-item">HTML</li>
+              <li class="skills-item">CSS</li>
+              <li class="skills-item">Javascript</li>
+              <li class="skills-item">MongoDB</li>
+              <li class="skills-item">Express Js</li>
+              <li class="skills-item">React Js</li>
+              <li class="skills-item">Node Js</li>
+              <li class="skills-item">Redux</li>
+              <li class="skills-item">Next Js</li>
+              <li class="skills-item">Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skills-marketing" data-aos="fade-left">
+            <i class="fas fa-bullhorn"></i>
+            <h4>Marketing</h4>
+            <ul class="skills-list">
+              <li class="skills-item">Adobe Photoshop</li>
+              <li class="skills-item">Customer Handling</li>
+              <li class="skills-item">Marketing</li>
+              <li class="skills-item">Advertising</li>
+              <li class="skills-item">Social Media Marketing</li>
+              <li class="skills-item">Adobe Lightroom</li>
+              <li class="skills-item">Adobe Premiere Pro</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects-title" data-aos="zoom-out">
+          <i class="fas fa-star"></i>
+          <h2>Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="flip-up">
+            <a href="https://quiet-dusk-70616.herokuapp.com/">
+              <div class="project-img">
+                <img src="img/PokemonApp.jpg" alt="" />
+              </div>
+            </a>
+            <div class="project-info">
+              <h3>
+                <a href="https://quiet-dusk-70616.herokuapp.com/"
+                  >Pokemon App</a
+                >
+              </h3>
+              <p>Pokemon API project using the MERN stack</p>
+              <button>
+                <a href="https://quiet-dusk-70616.herokuapp.com/"
+                  >Visit Website</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="flip-down">
+            <a href="https://still-fjord-51531.herokuapp.com/">
+              <div class="project-img">
+                <img src="img/DevConnector.jpg" alt="" />
+              </div>
+            </a>
+            <div class="project-info">
+              <h3>
+                <a href="https://still-fjord-51531.herokuapp.com/"
+                  >Dev Connector App</a
+                >
+              </h3>
+              <p>
+                Social media for developers alike, this project is from the
+                course MERN Stack Front To Back but I've added some new
+                functionalities
+              </p>
+              <button>
+                <a href="https://still-fjord-51531.herokuapp.com/"
+                  >Visit Website</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <button class="top">
+          <a href="#top"><i class="fas fa-chevron-up"></i></a>
+        </button>
+        <div class="contact" id="contact">
+          <h4>Contact me</h4>
+          <div class="contact-group">
+            <div class="email">
+              <i class="far fa-envelope"></i>
+              <a href="mailto:tanmontgomeryf@gmail.com"
+                >tanmontgomeryf@gmail.com</a
+              >
+            </div>
+            <div class="CV">
+              <i class="far fa-file"></i>
+              <a href="/public/MontgomeryTanResume.pdf" target="_blank"
+                >Get my CV</a
+              >
+            </div>
+            <div class="phone">
+              <i class="fas fa-mobile-alt"></i>
+              <a href="tel:+639953301534">+639953301534</a>
+            </div>
+
+            <div class="socmed last">
+              <ul class="socmed-list">
+                <li class="socmed-item">
+                  <a href="https://github.com/tanmontgomeryf"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="socmed-item">
+                  <a href="https://www.facebook.com/montytan2000"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="socmed-item">
+                  <a href="https://www.instagram.com/hellomontytan/"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <ul class="footer-list">
+          <li class="footer-item"><a href="#about">About</a></li>
+          <li class="footer-item"><a href="#skills">Skills</a></li>
+          <li class="footer-item last"><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        easing: 'ease-in',
+      });
+    </script>
+  </body>
+</html>
